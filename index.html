@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+ 
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul class="social-media">
+                <li class="media__item"><i class="fa-brands fa-instagram"></i></li>
+                <li class="media__item"><i class="fa-brands fa-x-twitter"></i></li>
+                <li class="media__item"><i class="fa-brands fa-tiktok"></i></li>
+                <li class="media__item"><i class="fa-brands fa-youtube"></i></li>
+                <li class="media__item"><i class="fa-brands fa-spotify"></i></li>
+            </ul>
+            <ul class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <li class="menu__item"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">Biografia</a></li>
+                <li class="menu__item"><a href="#">Producciones</a></li>
+                <li class="menu__item"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="social-media-aside">
+        <ul class="social-media">
+            <li class="media-aside__item"><i class="fa-brands fa-instagram"></i></li>
+            <li class="media-aside__item"><i class="fa-brands fa-x-twitter"></i></li>
+            <li class="media-aside__item"><i class="fa-brands fa-tiktok"></i></li>
+            <li class="media-aside__item"><i class="fa-brands fa-youtube"></i></li>
+            <li class="media-aside__item"><i class="fa-brands fa-spotify"></i></li>
+        </ul>
+    </aside>
+    <main role="main">
+        <section id="Slider-section">
+            <h1>Ema Garcia</h1>
+            <picture>
+                <img src="assets/img/emagarcia.jpg" alt="">
+            </picture>
+        </section>
+        <section id="Biografia-section">
+            <picture>
+                <div class="rectangulo"></div>
+                <img src="" alt="">
+            </picture>
+            <div class="contendor-personalizado">
+                <blockquote>
+                    Actor desde pequeño , alegre, familiero , y por su puesto actual, ¿ que esperas?
+                </blockquote>
+                <button class="about-btn">Conoceme</button>
+            </div>
+        </section>
+        <section id="Producciones-section">
+            <div class="videos">
+                <video class="video__item" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no admite el elemento de video.
+                </video>
+                <video class="video__item" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no admite el elemento de video.
+                </video>
+                <video class="video__item" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no admite el elemento de video.
+                </video>
+            </div>
+        </section>
+        <section id="Contacto-section">
+            <div class="message-success">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Tu mensaje ha sido enviado con exito</p>
+                <p>Muchas Gracias!</p>
+            </div>
+            <form action="" method="post">
+                <div>
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                    <label for="asunto">Asunto:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                  </div>
+                <div>
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+        </section>
+    </main>
     
 </body>
+
 </html>
