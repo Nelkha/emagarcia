@@ -70,24 +70,36 @@ header{
 
  max-width: 375px;
  width: 100%;
+ position: fixed;
+ top: 0;
+background: white;
+ z-index: 1000;
+ 
 
 }
 
 nav{
     display: flex;
+    
     justify-content: space-between;
     width: 100%;
     margin-bottom: 0;
+    align-items: center;
+    padding: 5px;
+   
 }
 
 .menu{
     display: flex;
-    justify-content: end;
+    
+    align-items: center;
     list-style: none;
+    
 }
 .menu .menu__item{display: none;}
 .menu .menu__item:first-child{
     display: flex;
+    height: 29px;
 }
 
 .social-media{
@@ -117,7 +129,8 @@ position: relative;
     text-underline-offset: 5px;
     letter-spacing: 6px;
     font-size: 40px;
-    top: 600px;
+    top: 485px;
+   
     
 
 }
@@ -178,14 +191,14 @@ img{
       overflow: hidden;
 }
 .img--principal {
-
-    margin-top: 0;
-    background-image: url('/assets/img/emagarcia.jpg');
+ background-image: url('/assets/img/emagarcia.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 375px;
-    height: 740px;
+    height: 570px;
+    
+   
     }
 .imgbiografia{
     width: 334px;
