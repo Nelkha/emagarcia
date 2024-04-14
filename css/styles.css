@@ -1,4 +1,4 @@
-@font-face {
+g@font-face {
     font-family: "PPMori-Regular";
     src: url("/assets/font/PPMori-Regular.otf");
 }
@@ -191,7 +191,7 @@ img{
       overflow: hidden;
 }
 .img--principal {
- background-image: url('/assets/img/emagarcia.jpg');
+ background-image: url('emagarcia/assets/img/emagarcia.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
