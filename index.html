@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
- 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/position.css">
 </head>
 
 <body>
@@ -21,7 +21,8 @@
                 <li class="media__item"><i class="fa-brands fa-spotify"></i></li>
             </ul>
             <ul class="menu">
-                <i class="fa-solid fa-bars"></i>
+                <li class="menu__item"><i class="fa-solid fa-bars"></i></li>
+                <li class="menu__item"><i class="fa-regular fa-circle-xmark"></i></li>
                 <li class="menu__item"><a href="#">Home</a></li>
                 <li class="menu__item"><a href="#">Biografia</a></li>
                 <li class="menu__item"><a href="#">Producciones</a></li>
@@ -40,15 +41,14 @@
     </aside>
     <main role="main">
         <section id="Slider-section">
-            <h1>Ema Garcia</h1>
-            <picture>
-                <img src="assets/img/emagarcia.jpg" alt="">
-            </picture>
+            <h1>EMAGARCIA</h1>
+            <div class="img--principal"></div>
         </section>
         <section id="Biografia-section">
+            <div class="rectangulo"></div>
             <picture>
-                <div class="rectangulo"></div>
-                <img src="" alt="">
+
+                <img class="imgbiografia" src="assets/img/fotobiografia.jpg" alt="">
             </picture>
             <div class="contendor-personalizado">
                 <blockquote>
@@ -76,33 +76,37 @@
         <section id="Contacto-section">
             <div class="message-success">
                 <i class="fa-regular fa-circle-check"></i>
-                <p>Tu mensaje ha sido enviado con exito</p>
-                <p>Muchas Gracias!</p>
+                <p>Tu mensaje ha sido enviado con éxito.</p>
+                <p>¡Muchas Gracias!</p>
             </div>
-            <form action="" method="post">
+            <form class="formulario" action="" method="post">
                 <div>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" required>
+                    <h3>Contacto</h3>
                 </div>
                 <div>
-                  <label for="email">Correo electrónico:</label>
-                  <input type="email" id="email" name="email" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div>
-                  <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje" name="mensaje" required></textarea>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div>
                     <label for="asunto">Asunto:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
-                  </div>
-                <div>
-                  <button type="submit">Enviar</button>
                 </div>
-              </form>
+                <div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
-    
+
 </body>
 
 </html>

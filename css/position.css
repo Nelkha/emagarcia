@@ -1,0 +1,42 @@
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 375px;
+
+}
+#Biografia-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+#Slider-section{
+
+    
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.contendor-personalizado{
+    background: white;
+    position: relative;
+    width: 85%;
+    margin-left: 40px;
+    top: -170px;
+    border-radius: 0 70px 0 70px;
+    padding: 4%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.contendor-personalizado button{
+    align-self: flex-end;
+    
+}
+nav{
+    max-width: 375px;
+}
