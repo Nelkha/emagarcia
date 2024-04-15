@@ -9,6 +9,7 @@ main {
 }
 #Biografia-section{
     display: flex;
+    width: 375px;
     flex-direction: row;
     flex-wrap: wrap;
     background: #FFF;
