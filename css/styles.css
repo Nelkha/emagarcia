@@ -195,7 +195,7 @@ blockquote {
 
 .contenedor-img {
     width: 375px;
-    height: 100%;
+    height: 640px;
     overflow: hidden;
     display: flex;
     justify-content: center;

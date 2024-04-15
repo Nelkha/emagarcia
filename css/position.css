@@ -4,7 +4,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width: 375px;
+    max-width: 100%;
 
 }
 #Biografia-section{
@@ -16,7 +16,7 @@ main {
     padding-top: 30px;
     border-radius: 0% 20% 0 0;
     z-index: 2;
-    margin-top: 570px;
+    margin-top:50px;
     
     
 }
