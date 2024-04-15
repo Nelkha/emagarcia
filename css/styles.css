@@ -66,51 +66,55 @@ a {
 
 /*contenedores*/
 
-header{
+header {
 
- max-width: 375px;
- width: 100%;
- position: fixed;
- top: 0;
-background: white;
- z-index: 1000;
- 
+    max-width: 375px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1000;
+
 
 }
 
-nav{
+nav {
     display: flex;
-    
+
     justify-content: space-between;
     width: 100%;
     margin-bottom: 0;
     align-items: center;
     padding: 5px;
-   
+
 }
 
-.menu{
+.menu {
     display: flex;
-    
+
     align-items: center;
     list-style: none;
-    
+
 }
-.menu .menu__item{display: none;}
-.menu .menu__item:first-child{
+
+.menu .menu__item {
+    display: none;
+}
+
+.menu .menu__item:first-child {
     display: flex;
     height: 29px;
 }
 
-.social-media{
-display: flex;
-list-style: none;
+.social-media {
+    display: flex;
+    list-style: none;
 
 }
 
-.contendor-personalizado{
+.contendor-personalizado {
 
-    
+
     border: 2px solid black;
 
 }
@@ -121,7 +125,7 @@ list-style: none;
 
 
 h1 {
-position: relative;
+    position: relative;
     color: #fff;
     font-family: "PPMori-SemiBold";
     text-decoration: underline;
@@ -130,8 +134,8 @@ position: relative;
     letter-spacing: 6px;
     font-size: 40px;
     top: 485px;
-   
-    
+
+
 
 }
 
@@ -164,7 +168,7 @@ blockquote {
 
     font-family: "PPMori-SemiBold";
     font-size: 24px;
-    width:106px ;
+    width: 106px;
     height: 25px;
     color: rgba(155, 155, 155, 1);
 
@@ -173,7 +177,7 @@ blockquote {
 
 /*Botones*/
 
-.contendor-personalizado button{
+.contendor-personalizado button {
 
     font-family: "PPMori-Regular";
     font-size: 15px;
@@ -183,33 +187,41 @@ blockquote {
     padding: 2px;
     border: solid black 0.5px;
     border-bottom: 1px;
-    border-radius: 0px 5px 0px 5px ;
+    border-radius: 0px 5px 0px 5px;
 }
 
-img{
-    width: 375px;
-      overflow: hidden;
-}
-.img--principal {
- background-image: url('emagarcia/assets/img/emagarcia.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+
+
+.contenedor-img {
     width: 375px;
     height: 570px;
-    
-   
-    }
-.imgbiografia{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img--principal {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.imgbiografia {
     width: 334px;
     height: 423px;
     border-radius: 0 25% 0 0;
-    
+
 }
-.rectangulo{
+
+.rectangulo {
     background-color: black;
     height: 423px;
     width: 26px;
     margin-left: 8px;
-    
+
 }
