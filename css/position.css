@@ -9,19 +9,21 @@ main {
 }
 #Biografia-section{
     display: flex;
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     flex-direction: row;
     flex-wrap: wrap;
     background: #FFF;
-    padding-top: 30px;
-    border-radius: 0% 20% 0 0;
+    padding-top: 3%;
+    padding-left: 1%;
+    
     z-index: 2;
     margin-top:50px;
     
     
 }
 #Slider-section{
-
+max-width: 375px;
    position: sticky;
    top: 0;
    margin-top: -50px;
@@ -37,7 +39,7 @@ main {
     width: 85%;
     margin-left: 40px;
     top: -170px;
-    border-radius: 0 70px 0 70px;
+    border-radius: 0 50px 0 50px;
     padding: 4%;
     text-align: left;
     display: flex;
@@ -52,3 +54,54 @@ main {
 nav{
     max-width: 375px;
 }
+
+#Producciones-section{
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    
+}
+
+
+#Contacto-section{
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-wrap: wrap;
+    background: #FFF;
+    justify-content: center;
+   
+    
+   
+}
+#Contacto-section div:first-child{
+width: 95%;
+border: 5px solid black;
+border-radius: 50px 0 50px 0;
+
+}
+.campos, .envio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    
+   
+}
+.formulario .campos input{
+width: 36.2%;
+margin: 2.5%;
+margin-bottom: 5%;
+}
+.formulario .campos input:last-child{
+    width: 77.5%;
+    margin: 0;
+    margin-bottom: 5%;
+    
+    }
+    
+
+   

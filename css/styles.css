@@ -31,6 +31,7 @@ body {
     font-size: 14px;
     color: rgb(0, 0, 0);
     text-align: center;
+    
 }
 
 /*menu redes*/
@@ -67,31 +68,32 @@ a {
 /*contenedores*/
 
 header {
-
-    max-width: 375px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     position: fixed;
     top: 0;
     background: white;
     z-index: 1000;
+    
 
 
 }
 
 nav {
     display: flex;
-
+    
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 0;
+    margin: 0 1% 0 1%;
     align-items: center;
     padding: 5px;
 
 }
 
 .menu {
-    display: flex;
 
+    display: flex;
     align-items: center;
     list-style: none;
 
@@ -107,18 +109,12 @@ nav {
 }
 
 .social-media {
+
     display: flex;
     list-style: none;
+    gap: 10%;
 
 }
-
-.contendor-personalizado {
-
-
-    border: 2px solid black;
-
-}
-
 
 
 /*textos*/
@@ -145,12 +141,7 @@ blockquote {
     font-size: 24px;
 }
 
-.message-success {
 
-    font-family: "PPMori-Regular";
-    font-size: 32px;
-
-}
 
 .formulario h3 {
 
@@ -179,15 +170,16 @@ blockquote {
 
 .contendor-personalizado button {
 
-    font-family: "PPMori-Regular";
+    font-family: "PPMori-SemiBold";
     font-size: 15px;
     color: rgb(0, 0, 0);
     width: 93px;
     height: 25px;
     padding: 2px;
-    border: solid black 0.5px;
-    border-bottom: 1px;
-    border-radius: 0px 5px 0px 5px;
+    border-width: 1px 1px 3px 3px;
+    border-radius: 0 5px 0 5px;
+    border-color: black;
+    background-color: #fff;
 }
 
 
@@ -204,24 +196,68 @@ blockquote {
 
 .img--principal {
     width: 100%;
+   
     height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    
 }
 
 
 
 .imgbiografia {
-    width: 330px;
+    width: 94%;
     height: 423px;
-    border-radius: 0 25% 0 0;
+    border-radius: 0 50px 0 0;
 
 }
 
 .rectangulo {
     background-color: black;
     height: 423px;
-    width: 26px;
-    margin-left: 8px;
+    width: 5%;
 
+
+}
+
+.message-success{
+    display: none;
+}
+
+.formulario{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center ;
+    margin: 5% auto;
+    
+}
+
+.formulario div input{
+    border: none;
+    border-bottom: 2px rgb(89, 89, 89) solid;
+}
+.formulario div:first-child{
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+.envio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.envio textarea{
+    width:80%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 30vw;
+    border: none;
+    padding-left: 1%;
+    border-bottom: 2px solid rgb(89, 89, 89) ;
+    margin-bottom: 10%;
+}
+.envio button{
+    width: 30%;
+    
 }
