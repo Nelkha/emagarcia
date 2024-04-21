@@ -31,6 +31,10 @@ body {
     font-size: 14px;
     color: rgb(0, 0, 0);
     text-align: center;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 }
 
 /*menu redes*/
@@ -60,6 +64,10 @@ a {
     height: 29px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 .social-media-aside {
     display: none;
 }
@@ -67,15 +75,26 @@ a {
 /*contenedores*/
 
 header {
+<<<<<<< HEAD
 
     max-width: 375px;
     width: 100%;
+=======
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+>>>>>>> master
     position: fixed;
     top: 0;
     background: white;
     z-index: 1000;
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 }
 
 nav {
@@ -83,15 +102,24 @@ nav {
 
     justify-content: space-between;
     width: 100%;
+<<<<<<< HEAD
     margin-bottom: 0;
+=======
+    margin: 0 1% 0 1%;
+>>>>>>> master
     align-items: center;
     padding: 5px;
 
 }
 
 .menu {
+<<<<<<< HEAD
     display: flex;
 
+=======
+
+    display: flex;
+>>>>>>> master
     align-items: center;
     list-style: none;
 
@@ -107,6 +135,7 @@ nav {
 }
 
 .social-media {
+<<<<<<< HEAD
     display: flex;
     list-style: none;
 
@@ -120,6 +149,15 @@ nav {
 }
 
 
+=======
+
+    display: flex;
+    list-style: none;
+    gap: 10%;
+
+}
+
+>>>>>>> master
 
 /*textos*/
 
@@ -145,12 +183,16 @@ blockquote {
     font-size: 24px;
 }
 
+<<<<<<< HEAD
 .message-success {
 
     font-family: "PPMori-Regular";
     font-size: 32px;
 
 }
+=======
+
+>>>>>>> master
 
 .formulario h3 {
 
@@ -179,19 +221,31 @@ blockquote {
 
 .contendor-personalizado button {
 
+<<<<<<< HEAD
     font-family: "PPMori-Regular";
+=======
+    font-family: "PPMori-SemiBold";
+>>>>>>> master
     font-size: 15px;
     color: rgb(0, 0, 0);
     width: 93px;
     height: 25px;
     padding: 2px;
+<<<<<<< HEAD
     border: solid black 0.5px;
     border-bottom: 1px;
     border-radius: 0px 5px 0px 5px;
+=======
+    border-width: 1px 1px 3px 3px;
+    border-radius: 0 5px 0 5px;
+    border-color: black;
+    background-color: #fff;
+>>>>>>> master
 }
 
 
 
+<<<<<<< HEAD
 
 .contenedor-img {
     width: 375px;
@@ -215,13 +269,160 @@ blockquote {
     width: 330px;
     height: 423px;
     border-radius: 0 25% 0 0;
+=======
+.contenedor-img {
+  
+    width: 375px; /* Ancho del contenedor */
+    height: 640px; /* Altura del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    overflow: hidden; /* Oculta partes de la imagen que puedan salir del contenedor */
+    position: relative; /* Posición relativa para alinear la imagen */
+    z-index: -999;
+}
+.img--principal{
+    width: auto; /* Ancho automático para mantener la proporción de la imagen */
+    height: 100%; /* Altura al 100% del contenedor */
+    display: block; /* Evita el espacio extra por defecto debajo de la imagen */
+    position: absolute; /* Posición absoluta para alinear la imagen */
+    top: 50%; /* Desplaza la imagen hacia abajo en la mitad del contenedor */
+    left: 50%; /* Desplaza la imagen hacia la derecha en la mitad del contenedor */
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    
+}
+
+
+.imgbiografia {
+    width: 94%;
+    height: 423px;
+    border-radius: 0 50px 0 0;
+>>>>>>> master
 
 }
 
 .rectangulo {
     background-color: black;
     height: 423px;
+<<<<<<< HEAD
     width: 26px;
     margin-left: 8px;
 
+=======
+    width: 5%;
+    margin: 0;
+
+
+}
+
+.message-success {
+    display: none;
+}
+
+/*FORMULARIO*/
+.formulario {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% auto;
+
+}
+
+.formulario div input {
+    border: none;
+    border-bottom: 2px rgb(89, 89, 89) solid;
+}
+
+.formulario div:first-child {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.envio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.envio textarea {
+    width: 80%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 30vw;
+    border: none;
+    padding-left: 1%;
+    border-bottom: 2px solid rgb(89, 89, 89);
+    margin-bottom: 10%;
+}
+
+.envio button {
+
+    font-family: 'PPMori-SemiBold';
+    font-size: 1.2em;
+    width: 30%;
+    height: 25px;
+    padding: 1%;
+    align-content: center;
+    color: #fff;
+    background-color: black;
+    border: none;
+
+}
+
+/*SECTION PRODUCIONES*/
+
+
+.carousel__contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    
+    margin-bottom: 1%;
+
+}
+
+.carousel__lista {
+    width: 95%;
+    max-width: 375px;
+
+}
+
+video {
+
+    max-width: 95%;
+
+}
+
+.carousel__botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+
+}
+.mas__esenas{
+
+    display: flex;
+    width:100%;
+    height: auto;
+    font-family: 'PPMori-Regular';
+    font-size: 22px;
+    background-color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mas__esenas i {
+    align-content: center;
+>>>>>>> master
 }
