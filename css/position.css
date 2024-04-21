@@ -7,33 +7,36 @@ main {
     max-width: 100%;
 
 }
-#Biografia-section{
+
+/*BIOGRAFIA*/
+
+#Biografia-section {
     display: flex;
     width: 100%;
     max-width: 375px;
+    height: 500PX;
     flex-direction: row;
     flex-wrap: wrap;
     background: #FFF;
-    padding-top: 3%;
+    padding-top: 10%;
     padding-left: 1%;
-    
     z-index: 2;
-    margin-top:50px;
-    
-    
+
 }
-#Slider-section{
-max-width: 375px;
-   position: sticky;
-   top: 0;
-   margin-top: -50px;
-   height: 640px;
+
+#Slider-section {
+    max-width: 375px;
+    position: sticky;
+    top: 0;
+    margin-top: -50px;
+    height: 85%;
     margin-bottom: 50px;
     z-index: -999;
-  
-    
+
+
 }
-.contendor-personalizado{
+
+.contendor-personalizado {
     background: white;
     position: relative;
     width: 85%;
@@ -44,64 +47,75 @@ max-width: 375px;
     text-align: left;
     display: flex;
     flex-direction: column;
-   
-    
+
+
 }
-.contendor-personalizado button{
+
+.contendor-personalizado button {
     align-self: flex-end;
-    
+
 }
-nav{
+
+nav {
     max-width: 375px;
 }
 
-#Producciones-section{
+
+/*SECCION PRODUCIÓN*/
+
+#Producciones-section {
     display: flex;
     width: 100%;
     max-width: 375px;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #FFF;
+}
+.title__network__item{
     
+    width: 100%;
 }
 
+/*SECTION FORMULARIO*/
 
-#Contacto-section{
+#Contacto-section {
     display: flex;
     width: 100%;
     max-width: 375px;
     flex-wrap: wrap;
     background: #FFF;
     justify-content: center;
-   
-    
-   
-}
-#Contacto-section div:first-child{
-width: 95%;
-border: 5px solid black;
-border-radius: 50px 0 50px 0;
+
+
 
 }
-.campos, .envio{
+
+#Contacto-section div:first-child {
+    width: 95%;
+    border: 5px solid black;
+    border-radius: 50px 0 50px 0;
+
+}
+
+.campos,
+.envio {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
     justify-content: center;
-    
-   
+
+
 }
-.formulario .campos input{
-width: 36.2%;
-margin: 2.5%;
-margin-bottom: 5%;
+
+.formulario .campos input {
+    width: 36.2%;
+    margin: 2.5%;
+    margin-bottom: 5%;
 }
-.formulario .campos input:last-child{
+
+.formulario .campos input:last-child {
     width: 77.5%;
     margin: 0;
     margin-bottom: 5%;
-    
-    }
-    
 
-   
+}

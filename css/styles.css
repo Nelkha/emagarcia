@@ -31,7 +31,7 @@ body {
     font-size: 14px;
     color: rgb(0, 0, 0);
     text-align: center;
-    
+
 }
 
 /*menu redes*/
@@ -61,6 +61,7 @@ a {
     height: 29px;
 }
 
+
 .social-media-aside {
     display: none;
 }
@@ -75,14 +76,14 @@ header {
     top: 0;
     background: white;
     z-index: 1000;
-    
+
 
 
 }
 
 nav {
     display: flex;
-    
+
     justify-content: space-between;
     width: 100%;
     margin: 0 1% 0 1%;
@@ -196,9 +197,9 @@ blockquote {
 
 .img--principal {
     width: 100%;
-   
+
     height: 100%;
-    
+
 }
 
 
@@ -214,50 +215,124 @@ blockquote {
     background-color: black;
     height: 423px;
     width: 5%;
+    margin: 0;
 
 
 }
 
-.message-success{
+.message-success {
     display: none;
 }
 
-.formulario{
+/*FORMULARIO*/
+.formulario {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center ;
+    justify-content: center;
     margin: 5% auto;
-    
+
 }
 
-.formulario div input{
+.formulario div input {
     border: none;
     border-bottom: 2px rgb(89, 89, 89) solid;
 }
-.formulario div:first-child{
-   display: flex;
-   width: 100%;
-   flex-direction: row;
-   flex-wrap: nowrap;
+
+.formulario div:first-child {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-.envio{
+
+.envio {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.envio textarea{
-    width:80%;
+
+.envio textarea {
+    width: 80%;
     margin-left: 2.5%;
     margin-right: 2.5%;
     height: 30vw;
     border: none;
     padding-left: 1%;
-    border-bottom: 2px solid rgb(89, 89, 89) ;
+    border-bottom: 2px solid rgb(89, 89, 89);
     margin-bottom: 10%;
 }
-.envio button{
+
+.envio button {
+
+    font-family: 'PPMori-SemiBold';
+    font-size: 1.2em;
     width: 30%;
+    height: 25px;
+    padding: 1%;
+    align-content: center;
+    color: #fff;
+    background-color: black;
+    border: none;
+
+}
+
+/*SECTION PRODUCIONES*/
+
+#Producciones-section{
+    background-color: #fff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.carousel__contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
     
+    margin-bottom: 1%;
+
+}
+
+.carousel__lista {
+    width: 95%;
+    max-width: 375px;
+
+}
+
+video {
+
+    max-width: 95%;
+
+}
+
+.carousel__botones {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+
+}
+.mas__esenas{
+
+    display: flex;
+    width:100%;
+    height: auto;
+    font-family: 'PPMori-Regular';
+    font-size: 22px;
+    background-color: #fff;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mas__esenas i {
+    align-content: center;
 }
