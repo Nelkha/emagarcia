@@ -74,7 +74,6 @@ header {
     width: 100%;
     max-width: 100%;
     position: fixed;
-    top: 0;
     background: white;
     z-index: 1000;
 
@@ -140,7 +139,7 @@ h1 {
 blockquote {
 
     font-family: "PPMori-ExtraLight";
-    font-size: 24px;
+    font-size: 1.6em;
 }
 
 
@@ -173,10 +172,10 @@ blockquote {
 .contendor-personalizado button {
 
     font-family: "PPMori-SemiBold";
-    font-size: 15px;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
-    width: 93px;
-    height: 25px;
+    width: 30%;
+    height: 20%;
     padding: 2px;
     border-width: 1px 1px 3px 3px;
     border-radius: 0 5px 0 5px;
@@ -187,36 +186,49 @@ blockquote {
 
 
 .contenedor-img {
-  
-    width: 375px; /* Ancho del contenedor */
-    height: 640px; /* Altura del contenedor */
-    margin: 0 auto; /* Centrar horizontalmente */
-    overflow: hidden; /* Oculta partes de la imagen que puedan salir del contenedor */
-    position: relative; /* Posición relativa para alinear la imagen */
+
+    width: 375px;
+    /* Ancho del contenedor */
+    height: 640px;
+    /* Altura del contenedor */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    overflow: hidden;
+    /* Oculta partes de la imagen que puedan salir del contenedor */
+    position: relative;
+    /* Posición relativa para alinear la imagen */
     z-index: -999;
 }
-.img--principal{
-    width: auto; /* Ancho automático para mantener la proporción de la imagen */
-    height: 100%; /* Altura al 100% del contenedor */
-    display: block; /* Evita el espacio extra por defecto debajo de la imagen */
-    position: absolute; /* Posición absoluta para alinear la imagen */
-    top: 50%; /* Desplaza la imagen hacia abajo en la mitad del contenedor */
-    left: 50%; /* Desplaza la imagen hacia la derecha en la mitad del contenedor */
-    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
-    
+
+.img--principal {
+    width: auto;
+    /* Ancho automático para mantener la proporción de la imagen */
+    height: 100%;
+    /* Altura al 100% del contenedor */
+    display: block;
+    /* Evita el espacio extra por defecto debajo de la imagen */
+    position: absolute;
+    /* Posición absoluta para alinear la imagen */
+    top: 50%;
+    /* Desplaza la imagen hacia abajo en la mitad del contenedor */
+    left: 50%;
+    /* Desplaza la imagen hacia la derecha en la mitad del contenedor */
+    transform: translate(-50%, -50%);
+    /* Centrar vertical y horizontalmente */
+
 }
 
 
 .imgbiografia {
     width: 94%;
-    height: 423px;
+    height: auto;
     border-radius: 0 50px 0 0;
 
 }
 
 .rectangulo {
     background-color: black;
-    height: 423px;
+    height: auto;
     width: 5%;
     margin: 0;
 
@@ -288,7 +300,7 @@ blockquote {
     display: flex;
     width: 100%;
     max-width: 375px;
-    
+
     margin-bottom: 1%;
 
 }
@@ -321,10 +333,11 @@ video {
     background: none;
 
 }
-.mas__esenas{
+
+.mas__esenas {
 
     display: flex;
-    width:100%;
+    width: 100%;
     height: auto;
     font-family: 'PPMori-Regular';
     font-size: 22px;
@@ -332,6 +345,262 @@ video {
     justify-content: flex-end;
     align-items: center;
 }
+
 .mas__esenas i {
     align-content: center;
+}
+
+
+/*____________SECTIONS_________________________*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    max-width: 100%;
+
+}
+
+/*BIOGRAFIA*/
+
+
+
+#Slider-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    position: sticky;
+    margin-top: -50px;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -999;
+}
+
+#Biografia-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding-top: 10%;
+    padding-left: 1%;
+    z-index: 2;
+
+}
+
+.contendor-personalizado {
+    background: white;
+    position: relative;
+    width: 90%;
+    margin-left: 7%;
+    top: -160px;
+    border-radius: 0 50px 0 50px;
+    padding: 4%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contendor-personalizado button {
+    align-self: flex-end;
+
+}
+
+nav {
+    max-width: 375px;
+}
+
+
+/*SECCION PRODUCIÓN*/
+
+#Producciones-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.title__network__item {
+
+    width: 100%;
+}
+
+/*SECTION FORMULARIO*/
+
+#Contacto-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-wrap: wrap;
+    background: #FFF;
+    justify-content: center;
+
+
+
+}
+
+#Contacto-section div:first-child {
+    width: 95%;
+    border: 5px solid black;
+    border-radius: 50px 0 50px 0;
+
+}
+
+.campos,
+.envio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+
+
+}
+
+.formulario .campos input {
+    width: 36.2%;
+    margin: 2.5%;
+    margin-bottom: 5%;
+}
+
+.formulario .campos input:last-child {
+    width: 77.5%;
+    margin: 0;
+    margin-bottom: 5%;
+
+}
+
+/*_____________FORMATO TABLET________________*/
+
+
+@media only screen and (max-width: 885px) and (min-width: 376px) {
+
+    /*MENU*/
+    header{
+        max-width: 884px;
+        margin: 0;
+        height: 4.5em;  
+    }
+    .menu{
+        max-width: 884px;
+    }
+    nav{
+        max-width: 884px;
+        justify-content: center;
+    }
+    .social-media{
+        display: none;
+    }
+    
+    /*SLIDER*/
+    #Slider-section {
+        max-width: 884px;
+    }
+
+    .contenedor-img {
+        width: 100%;
+        max-width: 884px;
+    }
+
+    .img--principal {
+        max-width: 1000px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    /*BIOGRAFIA*/
+    #Biografia-section {
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+        padding-right: 5%;
+        padding-left: 10%;
+        padding-top: 5%;
+
+    }
+
+    .imgbiografia {
+
+        width: 95%;
+
+    }
+
+    .contendor-personalizado {
+
+        width: 92%;
+        height: 25vw;
+        margin-left: 6.5%;
+        top: -230px;
+
+    }
+
+    blockquote {
+
+        font-family: "PPMori-ExtraLight";
+        font-size: 2.6em;
+    }
+
+    .contendor-personalizado button {
+        margin-top: 2%;
+        height: 50%;
+        font-size: 1.5rem;
+    }
+
+    /*PRODUCCIONES*/
+    #Producciones-section {
+        max-width: 884px;
+        flex-direction: column;
+
+    }
+
+    .carousel__contenedor {
+        max-width: 884px;
+        height: 50vw;
+    }
+
+    .carousel__lista {
+        max-width: 884px;
+    }
+
+    video {
+        width: 95%;
+        height: auto;
+    }
+
+    .carousel__botones {
+        justify-content: space-between;
+        align-self: center;
+
+    }
+
+    .fa-chevron-right,
+    .fa-chevron-left {
+        font-size: 3.5em;
+
+
+    }
+
+    /*FORMULARIO*/
+
+    #Contacto-section {
+        max-width: 884px;
+        height: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 10%;
+    }
+
+
 }
