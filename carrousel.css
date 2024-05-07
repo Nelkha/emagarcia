@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #283048;
+    background: linear-gradient(to right, #859398, #283048);
+    padding: 20px;
+}
+
+/*Producciones*/
+
+#Producciones-section {
+    max-width: 375px;
+    height: auto;
+    padding: 5% 1% 5% 1%;
+    background-color: floralwhite;
+}
+
+.carousel__contenedor {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+}
+
+.carousel__lista__tablet,
+.carousel__lista__escritorio {
+    display: none;
+}
+
+
+.carousel__lista {
+    width: 100%;
+    max-width: 375px;
+}
+
+.carousel__elemento video {
+    max-width: 375px;
+    height: auto;
+}
+
+.btn-left-1,
+.btn-right-1 {
+    display: none;
+}
+
+#Producciones-section button {
+
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn__telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.mas-escenas {
+    display: flex;
+    margin: 2%;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 885px) and (min-width: 768px) {
+
+    #Producciones-section {
+        width: 100%;
+        max-width: 885px;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 884px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+        width: 3%;
+    }
+
+    .btn__telefono{
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__escritorio {
+        display: none;
+    }
+
+    .carousel__lista__tablet {
+        display: block;
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 880px;
+
+    }
+
+}
+@media only screen and (max-width: 1600px ) and (min-width: 1024px){
+
+    #Producciones-section {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+        width: 3%;
+    }
+
+    .btn__telefono{
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__tablet {
+        display: none;
+    }
+
+    .carousel__lista__escritorio {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 1600px;
+
+    }
+}

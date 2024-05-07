@@ -1,0 +1,879 @@
+@font-face {
+    font-family: "PPMori-Regular";
+    src: url("/assets/font/PPMori-Regular.otf");
+}
+
+@font-face {
+    font-family: "PPMori-SemiBold";
+    src: url("/assets/font/PPMori-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "PPMori-Extralight";
+    src: url("/assets/font/PPMori-Extralight.otf");
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+/*menu redes*/
+
+.social-media {
+
+    font-size: 29px;
+    width: 29px;
+    height: 29px;
+}
+
+i {
+
+    font-size: 29px;
+    width: 39px;
+    height: 39px;
+
+}
+
+a {
+
+    font-family: "PPMori-SemiBold";
+    color: black;
+    text-decoration: none;
+    font-size: 48px;
+    width: 29px;
+    height: 29px;
+}
+
+
+.social-media-aside {
+    display: none;
+}
+
+/*contenedores*/
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 1000;
+
+
+
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 1% 0 1%;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu .menu__item {
+    display: none;
+}
+
+.menu .menu__item:first-child {
+    display: flex;
+    height: 29px;
+}
+
+.social-media {
+
+    display: flex;
+    list-style: none;
+    gap: 10%;
+
+}
+
+
+/*textos*/
+
+
+h1 {
+    position: relative;
+    color: #fff;
+    font-family: "PPMori-SemiBold";
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 5px;
+    letter-spacing: 6px;
+    font-size: 40px;
+    top: 485px;
+
+
+
+}
+
+blockquote {
+
+    font-family: "PPMori-ExtraLight";
+    font-size: 1.6em;
+}
+
+
+
+.formulario h3 {
+
+    width: 168px;
+    height: 34px;
+    font-family: "PPMori-Regular";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.formulario:nth-child(2),
+.formulario:nth-child(3),
+.formulario:nth-child(4),
+.formulario:nth-child(5) {
+
+    font-family: "PPMori-SemiBold";
+    font-size: 24px;
+    width: 106px;
+    height: 25px;
+    color: rgba(155, 155, 155, 1);
+
+}
+
+
+/*Botones*/
+
+.about-btn {
+
+    font-family: "PPMori-SemiBold";
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 20%;
+    padding: 2px;
+    border-width: 1px 1px 3px 3px;
+    border-radius: 0 5px 0 5px;
+    border-color: black;
+    background-color: #fff;
+}
+
+
+
+.contenedor-img {
+
+    width: 375px;
+    /* Ancho del contenedor */
+    height: 640px;
+    /* Altura del contenedor */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    overflow: hidden;
+    /* Oculta partes de la imagen que puedan salir del contenedor */
+    position: relative;
+    /* Posición relativa para alinear la imagen */
+    z-index: -999;
+}
+
+.img--principal {
+    width: auto;
+    /* Ancho automático para mantener la proporción de la imagen */
+    height: 100%;
+    /* Altura al 100% del contenedor */
+    display: block;
+    /* Evita el espacio extra por defecto debajo de la imagen */
+    position: absolute;
+    /* Posición absoluta para alinear la imagen */
+    top: 50%;
+    /* Desplaza la imagen hacia abajo en la mitad del contenedor */
+    left: 50%;
+    /* Desplaza la imagen hacia la derecha en la mitad del contenedor */
+    transform: translate(-50%, -50%);
+    /* Centrar vertical y horizontalmente */
+
+}
+
+
+.imgbiografia {
+    width: 94%;
+    height: auto;
+    border-radius: 0 50px 0 0;
+
+}
+
+.rectangulo {
+    background-color: black;
+    height: auto;
+    width: 5%;
+    margin: 0;
+
+
+}
+
+.message-success {
+    display: none;
+}
+
+/*FORMULARIO*/
+.formulario {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5% auto;
+
+}
+
+.formulario div input {
+    border: none;
+    border-bottom: 2px rgb(89, 89, 89) solid;
+}
+
+.formulario div:first-child {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.envio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.envio textarea {
+    width: 80%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 30vw;
+    border: none;
+    padding-left: 1%;
+    border-bottom: 2px solid rgb(89, 89, 89);
+    margin-bottom: 10%;
+}
+
+.envio button {
+
+    font-family: 'PPMori-SemiBold';
+    font-size: 1.2em;
+    width: 30%;
+    height: 25px;
+    padding: 1%;
+    align-content: center;
+    color: #fff;
+    background-color: black;
+    border: none;
+
+}
+
+/*____________SECTIONS_________________________*/
+
+/*SECTION PRODUCIONES*/
+
+#Producciones-section {
+    max-width: 375px;
+    height: auto;
+    padding: 5% 1% 5% 1%;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel__contenedor {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+}
+
+.carousel__lista__tablet,
+.carousel__lista__escritorio {
+    display: none;
+}
+
+
+.carousel__lista {
+    width: 100%;
+    max-width: 375px;
+}
+
+.carousel__elemento video {
+    max-width: 375px;
+    height: auto;
+}
+
+.btn-left-1,
+.btn-right-1 {
+    display: none;
+}
+
+#Producciones-section button {
+
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn__telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 375px;
+    gap: 2%;
+}
+
+.mas-escenas {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    margin: 2%;
+    justify-content: end;
+}
+
+/*---------------------------------------------------*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    max-width: 100%;
+
+}
+
+/*BIOGRAFIA 2*/
+
+#biografia2-section {
+    width: 100%;
+    max-width: 375px;
+    padding: 1%;
+    padding-top: 5%;
+    height: auto;
+    /* Estilos para la sección */
+}
+
+.cuadro-biografia {
+    width: 100%;
+    max-width: 375px;
+    height: 600px;
+    position: relative;
+    background-image: url('assets/img/fotobiografia.jpg');
+    background-size: cover;
+    background-position: center;
+    border-left: 20px solid rgb(0, 0, 0);
+    border-radius: 0 50px 0 0;
+    /* ajusta según tu necesidad */
+}
+
+.cuadro-texto-escritorio {
+
+    display: none;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    /* fondo blanco con transparencia */
+    padding: 4%;
+    border-radius: 0 30px 0 30px;
+    font-size: 4.5vw;
+}
+
+.cuadro-texto {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    max-width: 375px;
+    background-color: rgb(255, 255, 255);
+    /* fondo blanco con transparencia */
+    padding: 4%;
+    border-radius: 0 30px 0 30px;
+    font-size: 5vw;
+}
+
+.texto-biografia {
+
+    text-align: start;
+    font-family: 'PPMori-Extralight';
+}
+
+.about-btn {
+    padding: 10px ;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-width: 1px 1px 3px 3px;
+    border-radius: 0 5px 0 5px;
+    cursor: pointer;
+    margin-left: 65%;
+    margin-top: 2%;
+    font-family: 'PPMori-Regular';
+    font-size: 3vw;
+}
+
+/*BIOGRAFIA*/
+
+
+
+#Slider-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    position: sticky;
+    margin-top: -50px;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -999;
+}
+
+#Biografia-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding-top: 10%;
+    padding-left: 1%;
+    z-index: 2;
+
+}
+
+.contendor-personalizado {
+    background: white;
+    position: relative;
+    width: 90%;
+    margin-left: 7%;
+    top: -160px;
+    border-radius: 0 50px 0 50px;
+    padding: 4%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contendor-personalizado button {
+    align-self: flex-end;
+
+}
+
+nav {
+    max-width: 375px;
+}
+
+
+/*SECCION PRODUCIÓN*/
+.carousel__contenedor__escritorio {
+    display: none;
+}
+
+#Producciones-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.title__network__item {
+
+    width: 100%;
+}
+
+/*SECTION FORMULARIO*/
+
+#Contacto-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-wrap: wrap;
+    background: #FFF;
+    justify-content: center;
+
+
+
+}
+
+#Contacto-section div:first-child {
+    width: 95%;
+    border: 5px solid black;
+    border-radius: 50px 0 50px 0;
+
+}
+
+.campos,
+.envio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    margin: 0;
+
+
+}
+
+.envio button {
+    margin: 0;
+}
+
+.formulario .campos input {
+    width: 36.2%;
+    margin: 2.5%;
+    margin-bottom: 5%;
+}
+
+.formulario .campos input:last-child {
+    width: 77.5%;
+    margin: 0;
+    margin-bottom: 5%;
+
+}
+
+
+
+/*_____________FORMATO TABLET________________*/
+
+
+@media only screen and (max-width: 885px) and (min-width: 768px) {
+
+
+    header {
+        max-width: 884px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 884px;
+    }
+
+    nav {
+        max-width: 884px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #FFF;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+    }
+
+
+    #Slider-section {
+        max-width: 884px;
+    }
+
+    .contenedor-img {
+        width: 100%;
+        max-width: 884px;
+    }
+
+    .img--principal {
+        max-width: 1000px;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    #biografia2-section {
+        max-width: 884px;
+    }
+
+    .cuadro-biografia {
+        width: 95%;
+        max-width: 884px;
+        height: 100vw;
+    }
+
+    .cuadro-texto {
+        max-width: 880px;
+    }
+
+    /*---------------------------------------------------*/
+
+    #Producciones-section {
+        width: 100%;
+        max-width: 885px;
+        padding: 5% 0 5% 0;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 884px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+    }
+
+    .btn__telefono {
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__escritorio {
+        display: none;
+    }
+
+    .carousel__lista__tablet {
+        display: block;
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 880px;
+
+    }
+
+    /*---------------------------------------------------*/
+    #Contacto-section {
+        max-width: 884px;
+        height: 500px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 10%;
+    }
+
+
+}
+
+/*_____________FORMATO ESCRITORIO________________*/
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1024px) {
+
+
+    /*MENU*/
+    header {
+        max-width: 1600px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 1600px;
+    }
+
+    nav {
+        max-width: 1600px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #ffffff;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+    }
+
+    /*SLIDER*/
+    #Slider-section {
+        max-width: 1600px;
+    }
+
+    .contenedor-img {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .img--principal {
+        width: 100%;
+        height: auto;
+        max-width: 1600px;
+
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+
+    /*BIOGRAFIA 2*/
+
+    #biografia2-section {
+        display: flex;
+        max-width: 1600px;
+        align-items: center;
+    }
+
+    .cuadro-texto-escritorio {
+        display: block;
+        width: 50%;
+        height: 20%;
+        font-size: 3.5vw;
+    }
+
+    .cuadro-biografia {
+        width: 40%;
+        max-width: 1600px;
+        height: 40vw;
+        border-left: 35px solid black;
+    }
+
+    .cuadro-texto {
+        display: none;
+        max-width: 880px;
+    }
+
+    .texto-biografia button {
+        margin-left: 60%;
+        margin-top: 6%;
+        padding: 10px ;
+        font-size: 3vw;
+        font-family: 'PPMori-Regular';
+        cursor: pointer;
+        background-color: #ffffff;
+        border-width: 1px 1px 3px 3px;
+        border-radius: 0 5px 0 5px;
+    }
+
+
+    /*PRODUCCIONES ESCRITORIO*/
+    #Producciones-section {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+        width: 3%;
+    }
+
+    .btn__telefono{
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__tablet {
+        display: none;
+    }
+
+    .carousel__lista__escritorio {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    /*FORMULARIO*/
+
+    #Contacto-section {
+        width: 80%;
+        max-width: 1600px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 10%;
+    }
+
+    #mensaje {
+        height: 400px;
+    }
+
+    .envio button {
+        height: 40px;
+    }
+}

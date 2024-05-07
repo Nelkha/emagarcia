@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "PPMori-Regular";
+    src: url("/assets/font/PPMori-Regular.otf");
+}
+
+@font-face {
+    font-family: "PPMori-SemiBold";
+    src: url("/assets/font/PPMori-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "PPMori-Extralight";
+    src: url("/assets/font/PPMori-Extralight.otf");
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+.social-media-aside {
+    display: none;
+}
+
+/*contenedores*/
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 1000;
+
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 1% 0 1%;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu .menu__item {
+    display: none;
+}
+
+.menu .menu__item:first-child {
+    display: flex;
+    height: 29px;
+}
+
+.social-media {
+
+    display: flex;
+    list-style: none;
+    gap: 10%;
+
+}
+
+/*menu redes*/
+
+.social-media {
+
+    font-size: 29px;
+    width: 29px;
+    height: 29px;
+}
+
+i {
+
+    font-size: 29px;
+    width: 39px;
+    height: 39px;
+
+}
+
+a {
+
+    font-family: "PPMori-SemiBold";
+    color: black;
+    text-decoration: none;
+    font-size: 48px;
+    width: 29px;
+    height: 29px;
+}
+
+
+.social-media-aside {
+    display: none;
+}
+
+/*-------------------------------------------------------*/
+
+#biografia_-section {
+    width: 100%;
+    max-width: 375px;
+    height: auto;
+}
+
+.texto__biografia {
+    font-family: 'PPMori-Regular';
+    text-align: start;
+    font-size: 8vw;
+}
+
+.texto__biografia p {
+    font-family: 'PPMori-Extralight';
+    font-size: 6vw;
+}
+
+.contenedor__biografia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+}
+
+.texto__biografia {
+    width: 100%;
+    height: auto;
+    padding: 10% 2% 5% 2%;
+}
+
+.foto__biografia img {
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 885px) and (min-width: 768px) {
+
+    /*MENU*/
+    header {
+        max-width: 1600px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 1600px;
+    }
+
+    nav {
+        max-width: 1600px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #ffffff;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+    }
+
+    /*-------------------------------------------------------*/
+
+    #biografia_-section {
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+        margin-left: 6%;
+    }
+
+    .texto__biografia {
+        font-size: 7vw;
+    }
+
+    .texto__biografia p {
+        font-size: 5vw;
+    }
+
+    .contenedor__biografia {
+        max-width: 884px;
+    }
+
+    .texto__biografia {
+        width: 94%;
+        height: auto;
+        padding: 10% 2% 5% 2%;
+    }
+
+    .foto__biografia {
+        width: 94%;
+        height: 1000px;
+        background-image: url(assets/img/WhatsApp\ Image\ 2024-04-09\ at\ 17.42.33_98c65642.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .foto__biografia img {
+        display: none;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1024px) {
+
+    /*MENU*/
+    header {
+        max-width: 1600px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 1600px;
+    }
+
+    nav {
+        max-width: 1600px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #ffffff;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+    }
+
+    /*-------------------------------------------------------*/
+
+    #biografia_-section {
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+        margin-left: 6%;
+    }
+
+    .texto__biografia {
+        font-size: 5vw;
+    }
+
+    .texto__biografia p {
+        font-size: 3vw;
+    }
+
+    .contenedor__biografia {
+        flex-direction: row-reverse;
+        max-width: 1600px;
+    }
+
+    .texto__biografia {
+        width: 60%;
+        height: auto;
+        padding: 10% 2% 5% 2%;
+    }
+
+    .foto__biografia {
+        width: 40%;
+        height: auto;
+        background-image: url(assets/img/WhatsApp\ Image\ 2024-04-09\ at\ 17.42.33_98c65642.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .foto__biografia img {
+        display: none;
+        width: 100%;
+    }
+
+
+}
