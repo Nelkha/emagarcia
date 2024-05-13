@@ -300,7 +300,6 @@ blockquote {
 #Producciones-section {
     max-width: 375px;
     height: auto;
-    padding: 5% 1% 5% 1%;
     background-color: floralwhite;
     display: flex;
     flex-direction: column;

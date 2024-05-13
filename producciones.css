@@ -1,0 +1,636 @@
+@font-face {
+    font-family: "PPMori-Regular";
+    src: url("/assets/font/PPMori-Regular.otf");
+}
+
+@font-face {
+    font-family: "PPMori-SemiBold";
+    src: url("/assets/font/PPMori-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "PPMori-Extralight";
+    src: url("/assets/font/PPMori-Extralight.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-ligth";
+    src: url("/assets/font/Satoshi-Light.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url("/assets/font/Satoshi-Medium.otf");
+}
+
+@font-face {
+    font-family: "Satoshi-Regular";
+    src: url("/assets/font/Satoshi-Regular.otf");
+}
+
+@font-face {
+    font-family: "HunDIN";
+    src: url("/assets/font/HunDIN1451.ttf");
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+/*menu redes*/
+
+.social-media {
+
+    font-size: 29px;
+    width: 29px;
+    height: 29px;
+}
+
+i {
+
+    font-size: 29px;
+    width: 39px;
+    height: 39px;
+
+}
+
+a {
+
+    font-family: "PPMori-SemiBold";
+    color: black;
+    text-decoration: none;
+    font-size: 48px;
+    width: 29px;
+    height: 29px;
+}
+
+
+.social-media-aside {
+    display: none;
+}
+
+/*contenedores*/
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 1000;
+
+
+
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 1% 0 1%;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.menu {
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+.menu .menu__item {
+    display: none;
+}
+
+.menu .menu__item:first-child {
+    display: flex;
+    height: 29px;
+}
+
+.social-media {
+
+    display: flex;
+    list-style: none;
+    gap: 10%;
+
+}
+
+
+/*____________SECTIONS_________________________*/
+
+/*SECTION PRODUCIONES*/
+
+#Marginal-section {
+    max-width: 375px;
+    height: auto;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#Marginal-section h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'HunDIN';
+    font-size: 7vw;
+    padding: 5%;
+}
+
+#Marginal-section h3 {
+    width: 100%;
+    text-align: start;
+    font-family: 'HunDIN';
+    font-size: 5vw;
+    margin-top: 4%;
+}
+
+.carousel__contenedor {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+}
+
+.carousel__lista__tablet,
+.carousel__lista__escritorio {
+    display: none;
+}
+
+
+.carousel__lista {
+    width: 100%;
+    max-width: 375px;
+}
+
+.carousel__elemento video {
+    max-width: 375px;
+    height: auto;
+}
+
+.btn-left-1,
+.btn-right-1 {
+    display: none;
+}
+
+#Marginal-section button {
+
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn__telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 375px;
+    margin-top: 5%;
+    gap: 2%;
+}
+
+.mas-escenas {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    margin: 2%;
+    justify-content: end;
+}
+
+#Producciones-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.carousel__indicadores {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+
+/*---------------------------------------------------*/
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    max-width: 100%;
+
+}
+
+
+/*VIDEOS MUSICALES*/
+
+#Vid_Musicales-section {
+    max-width: 375px;
+    height: auto;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#Vid_Musicales-section h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'HunDIN';
+    font-size: 7vw;
+    padding: 5%;
+}
+
+#Vid_Musicales-section h3 {
+    width: 100%;
+    text-align: start;
+    font-family: 'HunDIN';
+    font-size: 5vw;
+    margin-top: 4%;
+}
+
+.carousel__contenedor {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+}
+
+.Vid_Musicales__lista__tablet,
+.Vid_Musicales__lista__escritorio {
+    display: none;
+}
+
+
+.Vid_Musicales__lista {
+    width: 100%;
+    max-width: 375px;
+}
+
+.carousel__elemento video {
+    max-width: 375px;
+    height: auto;
+}
+
+.btn-left-3,
+.btn-right-3 {
+    display: none;
+}
+
+#Vid_Musicales-section button {
+
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.Vid_Musicales__btn__telefono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 375px;
+    margin-top: 5%;
+    gap: 2%;
+}
+
+#ProdVid_Musicales-section {
+    display: flex;
+    width: 100%;
+    max-width: 375px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #FFF;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+/*_____________FORMATO TABLET________________*/
+
+
+@media only screen and (max-width: 885px) and (min-width: 768px) {
+
+
+    header {
+
+        max-width: 884px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 884px;
+    }
+
+    nav {
+        max-width: 884px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #FFF;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+    }
+
+
+    /*----------------MARGINAL-----------------------------------*/
+
+    #Marginal-section {
+        width: 100%;
+        max-width: 885px;
+        padding: 5% 0 5% 0;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 884px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+    }
+
+    .btn__telefono {
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__escritorio {
+        display: none;
+    }
+
+    .carousel__lista__tablet {
+        display: block;
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 880px;
+
+    }
+
+    /*-------------VIDEOS MUSICALES--------------------------------------*/
+
+    #Vid_Musicales-section {
+        width: 100%;
+        max-width: 885px;
+        padding: 5% 0 5% 0;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 884px;
+        display: flex;
+    }
+
+    .btn-left-3,
+    .btn-right-3 {
+        display: block;
+    }
+
+    .Vid_Musicales__btn__telefono {
+        display: none;
+    }
+
+    .Vid_Musicales__lista,
+    .Vid_Musicales__lista__escritorio {
+        display: none;
+    }
+
+    .Vid_Musicales__lista__tablet {
+        display: block;
+        width: 100%;
+        max-width: 884px;
+        height: auto;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 880px;
+
+    }
+
+}
+
+/*_____________FORMATO ESCRITORIO________________*/
+
+
+@media only screen and (max-width: 1600px) and (min-width: 1024px) {
+
+
+    /*MENU*/
+    header {
+        max-width: 1600px;
+        margin: 0;
+        height: 4.5em;
+    }
+
+    .menu {
+        max-width: 1600px;
+    }
+
+    nav {
+        max-width: 1600px;
+        justify-content: center;
+    }
+
+    nav .social-media {
+        display: none;
+    }
+
+    .social-media-aside {
+        display: block;
+        flex: 1;
+        flex-direction: column;
+        position: fixed;
+        width: 6%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 0.5%;
+        background-color: #ffffff;
+    }
+
+    .social-media-aside .social-media {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: 2%;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+
+    main {
+        margin-left: 6%;
+        padding-bottom: 10%;
+    }
+
+
+    /* EL MARGINAL  PRODUCCIONES ESCRITORIO*/
+    #Marginal-section {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    #Marginal-section h1 {
+        font-size: 4vw;
+    }
+
+    #Marginal-section h3 {
+        font-size: 2vw;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+    }
+
+    .btn-left-1,
+    .btn-right-1 {
+        display: block;
+        width: 3%;
+    }
+
+    .btn__telefono {
+        display: none;
+    }
+
+    .carousel__lista,
+    .carousel__lista__tablet {
+        display: none;
+    }
+
+    .carousel__lista__escritorio {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+    }
+
+    .carousel__lista__escritorio .carousel__elemento {
+        margin-right: 1%;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    /*-------------VIDEOS MUSICALES--------------------------------------*/
+
+    #Vid_Musicales-section {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    #Vid_Musicales-section h1 {
+        font-size: 4vw;
+    }
+
+    #Vid_Musicales-section h3 {
+        font-size: 2vw;
+    }
+
+    .carousel__contenedor {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+    }
+
+    .btn-left-3,
+    .btn-right-3 {
+        display: block;
+        width: 3%;
+    }
+
+    .Vid_Musicales__btn__telefono {
+        display: none;
+    }
+
+    .Vid_Musicales__lista,
+    .Vid_Musicales__lista__tablet {
+        display: none;
+    }
+
+    .Vid_Musicales__lista__escritorio {
+        display: block;
+        width: 100%;
+        max-width: 1600px;
+        height: auto;
+    }
+
+    .Vid_Musicales__lista__escritorio .carousel__elemento {
+        margin-right: 1%;
+    }
+
+    .carousel__elemento video {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+
+}
